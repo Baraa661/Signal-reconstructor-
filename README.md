@@ -1,36 +1,23 @@
-# Signal-reconstructor-
-A UI application that resamples signal and then reconstructs it verifying Nyquist-Shannon theorem  
 
+# Digital signal reconstruction and signal composer 
+it is able to reconstruct a signal at the least processin time possible by utilizing The Nyquist–Shannon theory
+![vid_1](https://user-images.githubusercontent.com/61360832/154857683-b3ac40bd-ec9e-4866-aedc-3c5b50fa46e6.gif)
 
-An illustrator for the signal recovery that shows the importance and validation of the Nyquist rate.
-- Your application should allow the user to open a mid-length signal (around 1000 points length) and show it on
-the main graph.
-- The user can sample the given/read signal and see the sampled points highlighted on top of the signal.
-- The user can change the sampling rate via a slider that range from 0 Hz to 3fmax, where fmax is the maximum
-frequency in the read signal. When changing the sampling frequency, the sampled points are expected to be
-changed on the graph (ofcourse, the original signal will encounter no change when changing the sample rate).
-- The app should be able to reconstruct/recover the signal from the sampled points. You need to do some search
-and readings to perform this step (we did not take the signal reconstruction yet in the lecture). You can refer to
-this wiki page for a quick and good resource. Note that reconstruction is done little different from what was
-explained in the lecture. We will revisit that in the coming lecture but be aware to how you do it!
-- The user should be able to see the reconstructed signal from the sampled points in two ways:
-o As a dotted signal on top of the original signal
-o A new signal in a secondary graph below the main graph.
-- The user can toggle the visibility of the secondary graph via some UI element (button or menu item) such that
-when it disappears, the main graph should take the whole space of the app window.
-- The user should be able to maximize the app window normally. i.e., when maximized, all your control should
-resize/rescale to fill the window properly.
-- You can find a good example for the final functionality of your app in this figure from the same previous wiki
-page.
-- Your application should provide the user with a primitive signal composer where s/he can generate basic signals
-to test and validate on the app. Each signal is basically a summation of some sinusoidals and each sinusoidal has
-a specific frequency, magnitude and phase shift. The Signal Composer should show up either on the right side of
-the window where it can be resized via a splitter against the main illustrator graph OR as a separate tab in the
-application. The Composer should have the following functionalities:
-o One graph to display the sinusoidal to be generated. A small panel should show beside the graph to
-control the frequency, magnitude and phase of the sinusoidal. Then, a button to confirm and add this
-sinusoidal to the summation.
-o One graph to display the sum of the generated sinusoidals. There should be a combobox or menuitems
-through which the user can select one of the contributing sinusoidals and remove it via a delete button.
-o When the user is settled on his/her synthetic signal (the one that shows up in the second graph), s/he
-confirm moving it to the main illustrator graph to start the sampling/recovery process.
+its main features are:
+- Allow the user to open a mid-length signal and show it on the main graph
+- The user can sample the read signal and see the sampled points highlighted on top of the signal
+- The user can change the sampling rate via a slider that range from 0 Hz to 3fmax, where fmax is the maximum frequency in the read signal
+- The app recovers the signal from the sampled points
+
+- The user sees the reconstructed signal from the sampled points in two ways:
+    * As a dotted signal on top of the original signal
+    * A new signal in a secondary graph below the main graph.
+- The user can toggle the visibility of the secondary graph 
+
+- it provides the user with a primitive signal composer where s/he can generate basic signals to test and validate on the app.
+![screen1](https://user-images.githubusercontent.com/61360832/154857653-584646a9-f819-4d30-bc49-79f64206c3b4.png)
+![screen 2](https://user-images.githubusercontent.com/61360832/154857658-2b901416-5402-4d09-a675-68612aed01c0.png)
+![screen 3](https://user-images.githubusercontent.com/61360832/154857665-43c203d1-282d-41cf-9c86-6c8e15f38550.png)
+![screen 4](https://user-images.githubusercontent.com/61360832/154857668-57bc85a1-27eb-40d0-a420-36696393216d.png)
+![screen 5](https://user-images.githubusercontent.com/61360832/154857673-b7f74a7d-7d4e-4197-8e47-69596c0ddc31.png)
+![screen 6](https://user-images.githubusercontent.com/61360832/154857679-d4db47fc-f74a-4cda-a36f-eaffb5c45799.png)
